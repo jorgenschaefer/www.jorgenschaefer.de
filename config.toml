@@ -1,0 +1,29 @@
+baseurl = "https://www.jorgenschaefer.de/"
+languageCode = "en-us"
+title = "Jorgen Schäfer"
+
+[params]
+title = "Dipl.-Inf. Jorgen Schäfer"
+description = "IT Consultant"
+copyright = "Jorgen Schäfer"
+
+[[params.social]]
+title = "email"
+icon = "envelope-o"
+url = "mailto:Jorgen.Schaefer@gmail.com"
+
+[[params.social]]
+title = "github"
+icon = "github"
+url = "https://github.com/jorgenschaefer"
+
+[[params.social]]
+title = "blog"
+icon = "rss"
+url = "http://blog.jorgenschaefer.de/"
+
+[[params.social]]
+title = "twitter"
+icon = "twitter"
+url = "https://twitter.com/JorgenSchaefer"
+
