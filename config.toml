@@ -21,9 +21,3 @@ url = "https://github.com/jorgenschaefer"
 title = "blog"
 icon = "rss"
 url = "http://blog.jorgenschaefer.de/"
-
-[[params.social]]
-title = "twitter"
-icon = "twitter"
-url = "https://twitter.com/JorgenSchaefer"
-
