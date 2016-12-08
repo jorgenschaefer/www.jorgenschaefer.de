@@ -1,0 +1,1 @@
+This is the [Hugo](https://gohugo.io/) configuration for my homepage at https://www.jorgenschaefer.de/ using the [Landing Page Theme](https://github.com/crakjie/landing-page-hugo). Published for educational purposes, mainly.
