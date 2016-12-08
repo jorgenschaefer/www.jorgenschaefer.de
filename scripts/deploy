@@ -4,5 +4,5 @@ cd "$(dirname "$0")/.."
 
 set -ex
 hugo --theme=landing-page-hugo
-aws s3 sync public/ s3://www.jorgenschaefer.de --exclude .git
+aws s3 sync public/ s3://www.jorgenschaefer.de --delete
 aws cloudfront create-invalidation --distribution-id E3SRR69OPWS2Z1 --paths '/*'
