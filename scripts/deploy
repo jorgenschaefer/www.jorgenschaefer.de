@@ -1,18 +1,8 @@
 #!/bin/sh
 
-set -e
+cd "$(dirname "$0")/.."
 
-if [ "$1" = "prod" ]
-then
-    set -x
-    hugo --theme=landing-page-hugo
-    rsync -r public/ www.jorgenschaefer.de@127.0.0.1:/srv/www.jorgenschaefer.de/public/
-else
-    (
-        set -x
-        hugo -b https://beta.jorgenschaefer.de/ --theme=landing-page-hugo
-        rsync -r public/ beta.jorgenschaefer.de@127.0.0.1:/srv/beta.jorgenschaefer.de/public/
-    )
-    echo
-    echo "Deployed to beta, use '$0 prod' to deploy full"
-fi
+set -ex
+hugo --theme=landing-page-hugo
+aws s3 sync public/ s3://www.jorgenschaefer.de --exclude .git
+aws cloudfront create-invalidation --distribution-id E3SRR69OPWS2Z1 --paths '/*'
