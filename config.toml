@@ -22,3 +22,8 @@ url = "https://github.com/jorgenschaefer"
 title = "blog"
 icon = "rss"
 url = "http://blog.jorgenschaefer.de/"
+
+[[params.social]]
+title = "Patreon"
+icon = "eur"
+url = "https://www.patreon.com/jorgenschaefer"
