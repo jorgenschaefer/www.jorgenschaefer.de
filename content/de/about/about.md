@@ -1,5 +1,5 @@
 ---
-Title: Der Anbieter
+Title: Über mich
 Landing: About
 ---
 
